@@ -21,7 +21,7 @@ const ModeOfPayment = () => {
   };
 
   return (
-    <form className="w-full pb-6 mt-16">
+    <form onSubmit={(e) => e.preventDefault()} className="w-full pb-6 mt-16">
       <h3 className="font-semibold text-2xl">Select your mode of payment</h3>
       <p className="text-[#60646C] mt-4 mb-10">
         Payments with Tickete are secure and encrypted.
@@ -124,7 +124,7 @@ const ModeOfPayment = () => {
       </label>
 
       <div className="flex flex-col gap-4 my-4 border-b border-gray-300 pb-6">
-        <div className="bg-[#F9F9FB] flex justify-between p-6 rounded-2xl border border-gray-300">
+        <div className="bg-[#F9F9FB] flex justify-between p-6 rounded-2xl border border-gray-300 cursor-not-allowed">
           <div className="flex items-center gap-4 text-gray-400 font-medium">
             <img src={applePay} alt="apple pay" />
             <span>Coming soon</span>
@@ -145,7 +145,7 @@ const ModeOfPayment = () => {
           />
         </div>
 
-        <div className="bg-[#F9F9FB] flex justify-between p-6 rounded-2xl border border-gray-300">
+        <div className="bg-[#F9F9FB] flex justify-between p-6 rounded-2xl border border-gray-300 cursor-not-allowed">
           <div className="flex items-center gap-4 text-gray-400 font-medium">
             <img src={googlePay} alt="google pay" />
             <span>Coming soon</span>
