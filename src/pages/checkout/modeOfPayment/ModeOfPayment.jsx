@@ -11,10 +11,11 @@ import { PiLockFill } from "react-icons/pi";
 import applePay from "../../../assets/images/apple-pay.svg";
 import googlePay from "../../../assets/images/google-pay.svg";
 import bigRadio from "../../../assets/images/bigRadio.svg";
+import { BsInfoCircleFill } from "react-icons/bs";
 
 const ModeOfPayment = () => {
   return (
-    <form className="w-full border-b-2 border-gray-200 pb-4 mt-16">
+    <form className="w-full pb-6 mt-16">
       <h3 className="font-semibold text-2xl">Select your mode of payment</h3>
       <p className="text-[#60646C] mt-4 mb-10">
         Payments with Tickete are secure and encrypted.
@@ -105,7 +106,7 @@ const ModeOfPayment = () => {
         </button>
       </div>
 
-      <div className="flex flex-col gap-4 my-4">
+      <div className="flex flex-col gap-4 my-4 border-b border-gray-300 pb-6">
         <div className="bg-[#F9F9FB] flex justify-between p-6 rounded-2xl border border-gray-300">
           <div className="flex items-center gap-4 text-gray-400 font-medium">
             <img src={applePay} alt="apple pay" />
@@ -120,6 +121,19 @@ const ModeOfPayment = () => {
             <span>Coming soon</span>
           </div>
           <img src={bigRadio} alt="" />
+        </div>
+      </div>
+
+      <h3 className="font-semibold text-2xl mb-4 mt-16">Total Payable: $XXX</h3>
+      <div className="p-4 rounded-2xl border border-gray-300 flex gap-4">
+        <BsInfoCircleFill className="text-sm mt-1" />
+        <div>
+          <h4 className="font-medium">You will be charged in AED</h4>
+          <p className="text-[#60646C] text-sm">
+            The price shown here is in US Dollar (USD) as per the current
+            conversion rate. You will be charged in United Arab Emirates Dirham
+            (AED).
+          </p>
         </div>
       </div>
     </form>

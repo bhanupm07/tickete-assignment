@@ -4,7 +4,7 @@ import InputComponent from "../../../components/InputComponent";
 
 const PersonalDetails = () => {
   return (
-    <form className="w-full border-b-2 border-gray-200 pb-6">
+    <form className="w-full border-b border-gray-300 pb-6">
       <h3 className="font-semibold text-2xl">Enter your details</h3>
 
       <p className="text-[#60646C] mt-4 mb-10">

@@ -4,31 +4,36 @@ import { BsInfoCircleFill } from "react-icons/bs";
 import PersonalDetails from "./personalDetail/PersonalDetails";
 import AdditionalInformation from "./additionalInformation/AdditionalInformation";
 import ModeOfPayment from "./modeOfPayment/ModeOfPayment";
+import FAQ from "./FAQ";
 
 const Checkout = () => {
   return (
-    <main className="flex justify-between gap-6 px-28 py-20">
-      <div className="flex-grow">
-        <h2 className="text-5xl font-semibold">Confirm & pay</h2>
+    <main className="mx-28 pt-20">
+      <div className="flex justify-between gap-6 border-b border-gray-300">
+        <div className="flex-grow">
+          <h2 className="text-5xl font-semibold">Confirm & pay</h2>
 
-        <div className="p-4 border-2 rounded-xl my-16 bg-[#fcfcfd]">
-          <div className="flex items-center justify-between">
-            <h4 className="font-medium">Free cancellation</h4>
-            <BsInfoCircleFill className="text-[#60646C] text-sm" />
+          <div className="p-4 border-2 rounded-xl my-16 bg-[#fcfcfd]">
+            <div className="flex items-center justify-between">
+              <h4 className="font-medium">Free cancellation</h4>
+              <BsInfoCircleFill className="text-[#60646C] text-sm" />
+            </div>
+            <p className="text-[#60646C] text-sm">
+              Tickets can be cancelled by 13th December, 2022.
+            </p>
           </div>
-          <p className="text-[#60646C] text-sm">
-            Tickets can be cancelled by 13th December, 2022.
-          </p>
+
+          <PersonalDetails />
+          <AdditionalInformation />
+          <ModeOfPayment />
         </div>
 
-        <PersonalDetails />
-        <AdditionalInformation />
-        <ModeOfPayment />
+        <div className="row-span-3">
+          <BookingSummary />
+        </div>
       </div>
 
-      <div className="row-span-3">
-        <BookingSummary />
-      </div>
+      <FAQ />
     </main>
   );
 };
