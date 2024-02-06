@@ -16,7 +16,7 @@ const DropdownComponent = ({ ques, ans }) => {
         >
           {ques}
         </p>
-        {isOpen && <p className="text-xs">{ans}</p>}
+        {isOpen && <p className="text-xs mb-6">{ans}</p>}
       </div>
     </div>
   );

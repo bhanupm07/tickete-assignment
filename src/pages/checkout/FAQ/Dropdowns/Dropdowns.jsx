@@ -25,11 +25,15 @@ const Dropdowns = () => {
     },
   ];
 
-  const renderedJsx = quesAnsArray.map((item) => {
-    return <DropdownComponent ques={item.ques} ans={item.ans} />;
+  const renderedJsx = quesAnsArray.map((item, index) => {
+    return <DropdownComponent key={index} ques={item.ques} ans={item.ans} />;
   });
 
-  return <div className="flex flex-col gap-4 -mt-28 w-full">{renderedJsx}</div>;
+  return (
+    <div className="flex flex-col gap-4 -mt-28 max-[1000px]:-mt-0 w-full">
+      {renderedJsx}
+    </div>
+  );
 };
 
 export default Dropdowns;

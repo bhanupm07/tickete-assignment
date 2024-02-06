@@ -15,10 +15,10 @@ import { PiLockFill } from "react-icons/pi";
 
 const BookingSummary = () => {
   return (
-    <div className="carousel-container py-3 max-w-80 text-sm border rounded-xl">
-      <div className=" h-auto rounded-xl overflow-hidden relative mx-3">
+    <div className="carousel-container py-3 w-96 max-lg:w-full text-sm border rounded-xl">
+      <div className="h-auto rounded-xl overflow-hidden relative mx-3">
         <img
-          className="w-full h-auto"
+          className="w-full"
           src="https://images.unsplash.com/photo-1513188447171-ecf00455f051"
           alt="image"
         />

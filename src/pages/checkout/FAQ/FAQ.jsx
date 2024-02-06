@@ -10,19 +10,19 @@ const FAQ = () => {
         Here are some of our most asked questions.
       </p>
 
-      <div className="flex justify-between items-start gap-12">
-        <div className="flex justify-between bg-[#F9F9FB] rounded-2xl p-4 w-2/3">
-          <div className="flex flex-col gap-4">
+      <div className="flex justify-between items-start max-lg:flex-col-reverse gap-12">
+        <div className="flex justify-between max-sm:gap-2 bg-[#F9F9FB] rounded-2xl p-4 w-2/3 max-lg:w-2/3 max-md:w-full">
+          <div className="flex flex-col items-start gap-4">
             <p className="font-medium">
               Still need help?
               <br />
               We're here for you.
             </p>
-            <button className="bg-black p-4 rounded-2xl text-white">
+            <button className="bg-black p-4 max-sm:p-3 rounded-2xl text-white">
               Chat with us
             </button>
           </div>
-          <img src={faqSvg} alt="decoration" className="" />
+          <img src={faqSvg} alt="decoration" className="max-[405px]:w-28s" />
         </div>
 
         <Dropdowns />

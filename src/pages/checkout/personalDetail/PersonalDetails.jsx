@@ -14,8 +14,8 @@ const PersonalDetails = () => {
 
       <div className="flex flex-col gap-6">
         <InputComponent type="text" placeholder="Full name *" />
-        <div className="flex justify-between gap-6">
-          <div className="flex items-center gap-2 p-4 text-[#60646C] w-1/2 border-[2px] border-gray-300 rounded-xl">
+        <div className="flex max-sm:flex-col justify-between gap-6">
+          <div className="flex items-center gap-2 p-4 text-[#60646C] w-1/2 max-sm:w-full border-[2px] border-gray-300 rounded-2xl">
             <IoEarth />
             <select className="outline-none w-full text-gray-400">
               <option value="">Country code *</option>
@@ -23,11 +23,11 @@ const PersonalDetails = () => {
               <option value="+91">+91</option>
             </select>
           </div>
-          <div className="w-1/2">
+          <div className="w-1/2 max-sm:w-full">
             <InputComponent type="number" placeholder="Phone number *" />
           </div>
         </div>
-        <div className="flex justify-center gap-6">
+        <div className="flex max-sm:flex-col justify-center gap-6">
           <InputComponent type="email" placeholder="Email *" />
           <InputComponent type="email" placeholder="Confirm email *" />
         </div>
